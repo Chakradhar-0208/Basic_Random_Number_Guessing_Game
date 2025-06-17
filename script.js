@@ -33,7 +33,10 @@ function compareNumbers(temp, res) {
         } else {
             chances--;
             if (chances > 0) {
-                res.innerHTML = `❌ Wrong Guess! Tries left: ${chances}`;
+                let rel
+                if(temp>a) rel="Higher"
+                else rel="Lower"
+                res.innerHTML = `❌ Wrong Guess! Guessed Number is ${rel} Than Actual. Tries left: ${chances}`;
             } else {
                 res.innerHTML = `❌ Maximum tries reached. The number was ${a}. Click Generate to try again.`;
             }
