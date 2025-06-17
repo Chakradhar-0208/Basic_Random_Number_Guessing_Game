@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <style>
+/* For Chrome, Safari, Edge, Opera */
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+</style>
+</head>
+<body>
+    <h2>Random Number Guessing Game</h2>
+    <span style="font-size: 1.15rem;">Guess The Number: </span>
+ 
+
+<input type="number" id="GuessedNum" min="0" max="100" style="width: 30px;"></p>
+<button type="submit" onclick="generateNumber()">Generate</button>
+<button type="submit" onclick="validateNumbers()">Compare</button>
+<p id="result"></p>
+
+
+<h4>Instructions:</h4>
+<p>1. Your role is to Guess a number between 0-100 <br>2. Click on Generate button first to generate a random num <br>3. Enter your guessed number and click on Compare button to do the math <br>4. You only have 7 tries to guess the random number <br>5. Upon completion of given tries click Generate button again to continue.</p>
+ <script src="script.js"></script>
+</body>
+</html>
